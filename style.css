@@ -1,5 +1,19 @@
 @font-face {
     font-family: Norse-Bold;
-    src: url(fonts/Norse-Bold.otf)
+    src: url(../fonts/Norse-Bold.otf)
 }
 
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body {
+
+}
+
+h1 {
+    font-family: Norse-Bold, 
+}
