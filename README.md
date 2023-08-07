@@ -1,3 +1,4 @@
 # SignUpForm
 
-Just HTML/CSS responsive Sign-Up Form for fake product. Uses media query for mobile size screens.
+Just HTML/CSS/JavaScript responsive Sign-Up Form for fake product. Uses media query for mobile size screens.
+Checks if passwords match.
