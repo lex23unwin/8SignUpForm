@@ -97,7 +97,10 @@ body {
     height: 40%;
     display: flex;
     flex-direction: column;
-    gap: 10%;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-right: 40%;
+    font-size: .83rem;
 }
 
 .container-right-form p {
@@ -105,12 +108,30 @@ body {
     padding-left: 1em;
 }
 
-.container-right-form form {
-    padding-left: 1.5em;
-}
-
 .container-right-form p {
     font-size: 1.5rem;
+}
+
+#my-form {
+    margin-top: -25px;
+}
+
+.container-right-form form {
+    padding-left: 1.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.label-container {
+    padding-top: 20px;
+}
+
+input, label {
+    display: block;
 }
 
 input:focus {
