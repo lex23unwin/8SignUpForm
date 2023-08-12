@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Today!</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <div class="container-left">
 
-            <img src="../images/halie-west-25xggax4bSA-unsplash.jpg" 
+            <img src="./images/halie-west-25xggax4bSA-unsplash.jpg" 
             alt="Green leaves splash image" class="hero-image">
 
             <div class="header">
-                <img src="../images/odin-lined.png" alt="Odin logo" class="odin-logo">
-                <h1>ODIN</h1>
+                <img src="./images/odin-lined.png" alt="Odin logo" class="odin-logo">
+                <h1>FAKE</h1>
             </div>
             
             <p class="bottom-hero-text">Photo by <a href="https://unsplash.com/@haliewestphoto" class="picture-link">
@@ -37,27 +38,35 @@
                 <form action="#" id="my-form">
                     <div class="label-container">
                         <label for="firstname" class="label">First Name</label>
-                        <input type="text" id="firstname" name="firstname">
+                        <input type="text" id="firstname" name="firstname" required>
+                        
                     </div>
                     <div class="label-container">
                         <label for="lastname" class="label">Last Name</label>
-                        <input type="text" id="lastname" name="lastname">
+                        <input type="text" id="lastname" name="lastname" required>
+                        
                     </div>
                     <div class="label-container">
                         <label for="email" class="label">Email</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required autocomplete="off">
+                        
                     </div>
                     <div class="label-container">
                         <label for="tel">Phone Number</label>
-                        <input type="tel" id="tel" name="tel">
+                        <input type="tel" id="tel" name="tel" required>
+                        
                     </div>
                     <div class="label-container">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" required>
+                        <div class="error" id="password">Passwords don't match</div>
+                        
                     </div>
                     <div class="label-container">
                         <label for="confirmpassword">Confirm Password</label>
-                        <input type="password" id="confirmpassword" name="confirmpassword">
+                        <input type="password" id="confirmpassword" name="confirmpassword" required>
+                        <div class="error" id="password">Passwords don't match</div>
+
                     </div>
                 </form>
             </div>

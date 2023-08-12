@@ -1,36 +1,45 @@
 @font-face {
     font-family: Norse-Bold;
-    src: url(../fonts/Norse-Bold.otf)
+    src: url(./fonts/Norse-Bold.otf)
 }
 
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 body {
     background-color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height:100%;
-    min-height:100%; 
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
 .container-left {
     position: relative;
     grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    height: 785px;
+
 }
 
 .hero-image {
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+.bottom-hero-text {
+    font-size: calc(.6rem + .5vw);
+    display: flex;
+    justify-content: center;
+    margin-left: -30px;
 }
 
 .odin-logo {
@@ -43,6 +52,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1em;
     position: absolute;
     top: 15%;
@@ -78,6 +88,7 @@ body {
 .container-right {
     position: relative;
     background-color: #f5f5f5;
+    height: 642px;
 }
 
 .container-right-text {
@@ -94,48 +105,62 @@ body {
 
 .container-right-form {
     background-color: white;
-    height: 40%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    flex-wrap: wrap;
-    padding-right: 40%;
+    height: 400px;
     font-size: .83rem;
+    width: 100%;
+    flex-wrap: wrap;
 }
+
 
 .container-right-form p {
     padding-top: 1em;
-    padding-left: 1em;
+    padding-left: .7em;
+    font-size: 2.5rem;
 }
 
-.container-right-form p {
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    margin-top: 75px;
+}
+
+label {
+    display: block;
     font-size: 1.5rem;
 }
 
-#my-form {
-    margin-top: -25px;
+input {
+    font-size: 1.5rem;
 }
 
-.container-right-form form {
-    padding-left: 1.5em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+@media screen and (max-width: 1127px)
+{
+    label {
+        font-size: 1rem;
+    }
+    input {
+        font-size: 1rem;
+    }
 }
 
-.label-container {
-    padding-top: 20px;
+@media screen and (max-width: 550px)
+{
+    label {
+        font-size: .875rem;
+    }
+    input {
+        font-size: .875rem;
+    }
 }
 
-input, label {
-    display: block;
-}
 
 input:focus {
-    border: 1px solid blue;
+    border: 5px solid green;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
 }
 
