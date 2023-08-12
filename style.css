@@ -135,6 +135,7 @@ label {
 
 input {
     font-size: 1.5rem;
+    outline: none;
 }
 
 @media screen and (max-width: 1127px)
@@ -157,10 +158,13 @@ input {
     }
 }
 
-
 input:focus {
     border: 5px solid green;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+}
+
+.error {
+    display: none;
 }
 
 
